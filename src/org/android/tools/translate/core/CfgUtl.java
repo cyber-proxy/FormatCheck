@@ -57,4 +57,31 @@ public class CfgUtl {
         }
         return languagePathList;
     }
+
+    public static String getEngXmlPath(String rootDirec){
+        return rootDirec + PATH_REGREX;
+    }
+
+    public static List<String> getStringXmlFilePathList(String resPath){
+        List<String> stringXmlPathList = new ArrayList<>();
+        try {
+            File resDict = new File(resPath);
+            File[] resFiles = resDict.listFiles();
+            for (File resFile : resFiles){
+                if (resFile.getName().contains("values")){
+                    File[] valuesFiles = resFile.listFiles();
+                    for (File valuesFile : valuesFiles){
+                        if (valuesFile.getName().equals("strings.xml")){
+                            stringXmlPathList.add(valuesFile.getAbsolutePath());
+                            break;
+                        }
+                    }
+                    continue;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return stringXmlPathList;
+    }
 }

@@ -6,11 +6,13 @@
   "hi" : "Hindi,hi",
   "in" : "Indo,in",
   "it" : "it",
-  "ja" : "jp,ja",
-  "ko" : "Ko",
+  "ja" : "japanese",
+  "ko" : "Korea",
   "pt" : "Pt,pt",
   "ru" : "Russian,ru",
   "th" : "Thai,th",
   "tr" : "Turkish,tr",
+  "en" : "def,english",
+  "ms" : "Malay",
   "en" : "def,english"
 }
