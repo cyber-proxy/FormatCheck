@@ -9,7 +9,7 @@ import java.io.File;
 import java.util.*;
 
 public class XmlReadUtil {
-    private static final String FORMAT_TAG = "%";
+    private static final String FORMAT_TAG = "$";
 
     public static Set<FormatInfo> getFormatKeyList(String file) {
         Set<FormatInfo> keySet = new HashSet<>();

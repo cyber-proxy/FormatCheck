@@ -10,7 +10,7 @@ public class DetectorDlg {
 			@Override
 			public void detector(String resPath, String cfgPath) {
 				Debug.print("\tresPath->" +resPath + "\n\tcfg Path->" + cfgPath);
-				Checker parseXml = new Checker("E:\\Eclipse\\workspace\\FormatCheck\\src\\org\\mobile\\tsotumu\\cdf\\language.json", resPath);
+				Checker parseXml = new Checker( resPath);
 				parseXml.checkformat();
 			}
 		});
